@@ -1,3 +1,8 @@
+"""
+Script to translate text from excel sheets
+Author: Douglas Rodrigues
+"""
+
 from googletrans import Translator
 import pandas as pd
 
