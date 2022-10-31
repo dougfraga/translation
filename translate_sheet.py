@@ -10,7 +10,6 @@ import pandas as pd
 f = pd.read_excel('sheet.xlsx')
 
 
-cols = []
 for col in ['Key Words', 'Study Area', 'Available data', 'Main Results']: # Columns to translate
     print(col)
     lines = []
@@ -20,5 +19,5 @@ for col in ['Key Words', 'Study Area', 'Available data', 'Main Results']: # Colu
         lines.append(trans_text.text)
     f[col] = lines
 
-f.to_excel("output2.xlsx", index=False)
+f.to_excel("output.xlsx", index=False)
 
